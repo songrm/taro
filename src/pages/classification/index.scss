@@ -1,0 +1,18 @@
+.classIfication{
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+
+  .left{
+    flex-grow:1;
+    width: 180px;
+    border-right: 1px solid #f0f0f0;
+    border-top: 1px solid #f0f0f0;
+    height: 100vh;
+  }
+  .right{
+    flex-grow:4;
+    // background-color: red;
+    border-top: 1px solid #f0f0f0;
+  }
+}

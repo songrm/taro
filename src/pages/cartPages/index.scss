@@ -1,0 +1,73 @@
+@import '../../assets/color.scss';
+.cartPages{
+  padding: 20px;
+  background-color: $bgColor;
+  min-height: 100vh;
+
+  .cartList{
+    padding: 30px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    border:1px solid #f3f3f3;
+    background-color: #fff;
+
+    .cartImage {
+      height: 100px;
+      width: 150px;
+      overflow: hidden;
+      background-color: #f9f9f9;
+      border-radius: 4PX;
+
+      .image{
+        width: 100%;
+      }
+    }
+
+    .cartName {
+      font-size: 30px;
+      font-weight: bold;
+      width: 60%;
+      margin-top: 20px;
+      margin-left: 20px;
+
+      .cartPrice {
+        color: #B4282D;
+      }
+    }
+    .cartInput {
+      margin-top: 20px;
+    }
+  }
+  .billingFt{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background-color: #fff;
+    border-top:1px solid #d9d9d9;
+    padding-right: 180px;
+
+    &_price{
+      font-size: 32px;
+      color: #454545;
+      padding-left: 30px;
+      line-height: 100px;
+    }
+    &_order{
+      position: absolute;
+      right: 0;
+      height: 100px;
+      width: 270px;
+      top:0;
+      color: #fff;
+      text-align: center;
+      background-color: #DD1A21;
+      line-height: 100px;
+      font-size: 28px;
+      font-weight: normal;
+    }
+  }
+}

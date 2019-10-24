@@ -1,0 +1,40 @@
+@import '../../assets/color.scss';
+.setUp{
+ background-color: $bgColor;
+ padding-top: 50px;
+ min-height: 100vh;
+ &_modu{
+  margin: 20px;
+  padding: 30px 20px;
+  background-color: #fff;
+  border-radius: 8PX;
+  &_txt{
+    font-size: 36px;
+    color: #f2be45;
+    margin-bottom: 15px;
+    padding-left: 20px;
+  }
+ }
+
+ .person{
+  text-align: center;
+  &_name{
+    font-size: 36px;
+    color: #454545;
+
+    padding: 40px;
+  }
+  .person_img{
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    background-color: #e0f0e9;
+    margin: 0px auto;
+  }
+  .des{
+    color: #999;
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+}
+}

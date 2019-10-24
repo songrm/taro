@@ -1,0 +1,59 @@
+@import '../../../../assets/color.scss';
+
+.InvitationPage {
+  padding-top: 30px;
+  min-height: 100vh;
+  background: $bgColor;
+
+}
+
+.inputLabel {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1px solid $bgColor;
+  background: #fff;
+
+  height: 98px;
+  margin: 0 30px;
+
+  label {
+    font-size: 30px;
+    width: 100px;
+    margin-left: 20px;
+    margin-right: 40px;
+  }
+
+  input {
+    flex: 1;
+    font-size: 30px;
+    color: rgb(42, 42, 42);
+    height: 65px;
+    line-height: 65px;
+    background: none;
+
+    &::-webkit-input-placeholder {
+      color: #999;
+    }
+  }
+}
+
+.loginBtn {
+  margin: 20px 30px;
+  font-size: 34px;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  background-color: $btnColor;
+  box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  height: 90px;
+  line-height: 90px;
+
+  &.disable {
+    background: #999;
+    color: #fff;
+    pointer-events: none;
+  }
+}
+

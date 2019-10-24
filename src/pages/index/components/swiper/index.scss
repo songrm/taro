@@ -1,0 +1,23 @@
+$red : linear-gradient(90deg,#FF0000 0,#800080 100%);
+$orange : #FFA500;
+$yellow :linear-gradient(90deg,#2C2415 0,#736140 100%);
+$green : #008000;
+$bluegreen : #00FFFF;
+$blue : #0000FF;
+$purple : #800080;
+
+$list-bg:$red,$yellow,$orange,$blue,$green,$purple,$bluegreen;
+.test-h{
+  height: 400px;
+  @for $i from 1 through 3
+  {
+    .demo-text-#{$i}
+    {
+      border-radius: 18px;
+      height: 400px;
+      background: nth($list-bg,$i);
+    }
+  }
+}
+
+
