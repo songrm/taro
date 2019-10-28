@@ -91,7 +91,6 @@ export default class goodsDetails extends Component<props, state> {
               </View>
               <View className="spmcDesc" >
                 <View>超级会员价¥122.6,可省¥6.4</View>
-                {/* <View className="spmcEconomizePrice">¥6.4</View> */}
               </View>
             </View>
             <View className="spmcPrivilegeMess">再享每单返利6%/每月1件40元赠品等省钱权益</View>
@@ -102,7 +101,6 @@ export default class goodsDetails extends Component<props, state> {
             这里是详情
             <DataNone />
           </View>
-
           <Cart amount={this.props.totle} onGocart={this.onGocart} />
           <View onClick={this.goCart} className='addCart'>加入购物车</View>
       </View>

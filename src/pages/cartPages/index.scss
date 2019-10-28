@@ -4,6 +4,10 @@
   background-color: $bgColor;
   min-height: 100vh;
 
+  .he20{
+    height: 20px;
+  }
+
   .cartList{
     padding: 30px;
     border-radius: 8px;
@@ -29,7 +33,7 @@
       font-size: 30px;
       font-weight: bold;
       width: 60%;
-      margin-top: 20px;
+      // margin-top: 20px;
       margin-left: 20px;
 
       .cartPrice {

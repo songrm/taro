@@ -41,6 +41,7 @@ class App extends Component {
           "pages/home/index",
           "pages/distinguish/index",
           "pages/login/index",
+          "pages/order/index",
           "pages/pullPage/index"
         ]
       }

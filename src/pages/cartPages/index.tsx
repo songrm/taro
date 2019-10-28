@@ -1,10 +1,11 @@
 import Taro, { Component,Config } from '@tarojs/taro'
 import { View,Image } from '@tarojs/components'
 import { connect } from '@tarojs/redux'
-
+import { AtRadio } from 'taro-ui'
 import {HomeList,InputNumber,DataNone} from '../../component'
 
-
+import "taro-ui/dist/style/components/radio.scss"
+import "taro-ui/dist/style/components/icon.scss"
 import './index.scss'
 
 type props = {
@@ -13,7 +14,9 @@ type props = {
   totlePrice?: number,
   items?:any
 }
-type state = {}
+type state = {
+  value:string
+}
 
 @connect(({cart}) => ({
   ...cart
@@ -21,14 +24,14 @@ type state = {}
 
 export default class cartPages extends Component<props, state> {
   config: Config = {
-    navigationBarTitleText: '购物车'
+    navigationBarTitleText: '订单页'
   }
 
   constructor(props) {
     super(props)
-    // this.state = {
-    //   checked: props.checked
-    // }
+    this.state = {
+      value:'option1'
+    }
   }
 
   onHomeList(obj){
@@ -37,8 +40,12 @@ export default class cartPages extends Component<props, state> {
 
   componentDidMount(){
 
+  }
 
-
+  handleChange(value){
+    this.setState({
+      value
+    })
   }
 
   render () {
@@ -79,6 +86,16 @@ export default class cartPages extends Component<props, state> {
             <DataNone />
           )
         }
+      <View className='he20'></View>
+      <AtRadio
+        options={[
+          { label: '微信支付', value: 'option1' },
+          { label: '现金支付', value: 'option2' }
+        ]}
+
+        value={this.state.value}
+        onClick={this.handleChange.bind(this)}
+      />
 
 
         <HomeList title='猜你喜欢的' onHomeList= {this.onHomeList} columnNum={2} data={

@@ -44,8 +44,8 @@ export default class Request {
         data,
         header: {
           'Content-Type': 'application/json',
-          'X-Token': token,
-          'X-Shelf-ID': shelfId,
+          // 'X-Token': token,
+          // 'X-Shelf-ID': shelfId,
           ...header
         },
         method

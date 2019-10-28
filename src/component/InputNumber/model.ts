@@ -32,7 +32,6 @@ export default {
 
         } else {
           toast.showToast('库存不足')
-          // console.log('库存不足')
         }
       } else {
         // 不存在 数组中添加
