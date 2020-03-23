@@ -18,11 +18,7 @@
     "rootDir": ".",
     "jsx": "preserve",
     "paths": {
-      "@/*": ["./src/*"],
-      "components/*": ["./src/components/*"],
-      "api/*": ["./src/api/*"],
-      "pages/*": ["./src/pages/*"],
-      "utils": ["./src/utils/*"]
+      "@/*": ["./src/*"]
     },
     "typeRoots": [
       "node_modules/@types",

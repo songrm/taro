@@ -1,0 +1,69 @@
+@import '../../../../../styles/color.less';
+
+.evaluate-list {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  margin-bottom: 20px;
+
+  &-top {
+    display: flex;
+
+    &-image {
+      width: 204px;
+      height: 204px;
+      border-radius: 12px;
+
+      .image {
+        width: 204px;
+        height: 204px;
+      }
+    }
+
+    &-content {
+      width: calc(100% - 120px);
+      padding-left: 20px;
+
+      .title {
+        font-size: 32px;
+        color: #333;
+        line-height: 40px;
+        font-weight: 500;
+        overflow: hidden;
+        height: 80px;
+      }
+
+      .comment {
+        display: flex;
+
+        &-btn {
+          // margin-right: 10px;
+          padding: 0 20px;
+          line-height: 60px;
+          text-align: center;
+          background-color: #F51C1C;
+          border-radius: 8px;
+          color: #fff;
+          width: 136px;
+          align-self: flex-end;
+          margin-left: auto;
+          margin-top: 60px;
+        }
+
+        &-stars {
+          padding-top: 15px;
+          margin-top: 60px;
+        }
+      }
+    }
+  }
+
+  .des {
+    font-size: 28px;
+    color: #262626;
+    margin-top: 32px;
+    line-height: 42px;
+    overflow: hidden;
+    height: 90px;
+  }
+}

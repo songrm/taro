@@ -1,12 +1,11 @@
 import Taro, { Component, Config } from '@tarojs/taro'
-import Index from './pages/index/index'
+import Index from './pages/main/index/index'
 
-import '@tarojs/async-await'
 // import configStore from './store'
 import dva from './utils/dva'
 import models from './models/index'
 import { Provider } from '@tarojs/redux'
-import './app.scss'
+import './styles/app.less'
 
 
 const dvaApp = dva.createApp({
@@ -27,56 +26,66 @@ class App extends Component {
    */
   config: Config = {
     pages: [
-      'pages/goodsDetails/index',
-      'pages/classification/index',
-      'pages/cartPages/index',
-      'pages/setUp/index',
-      'pages/classPage/index',
-      'pages/index/index'
+      'pages/main/index/index',
+      'pages/main/goodsDetails/index',
+      'pages/main/classification/index',
+      'pages/main/cartPages/index',
+      'pages/main/mine/index',
+      'pages/main/classPage/index',
+
+      // 我的页面
+      'pages/personal/authentication/index',
+      'pages/personal/order/index',
+      'pages/personal/address/index',
+      'pages/personal/editAddress/index',
+      'pages/personal/coupon/index',
+      'pages/personal/wallet/index',
+      'pages/personal/cashOut/index'
+
     ],
-    subPackages:[
-      {
-        root: "subPackages/packageA",
-        pages: [
-          "pages/home/index",
-          "pages/distinguish/index",
-          "pages/login/index",
-          "pages/order/index",
-          "pages/pullPage/index"
-        ]
-      }
-    ],
+    // subPackages:[
+    //   {
+    //     root: "subPackages/packageA",
+    //     pages: [
+    //       "pages/home/index",
+    //       "pages/distinguish/index",
+    //       "pages/login/index",
+    //       "pages/order/index",
+    //       "pages/pullPage/index"
+    //     ]
+    //   }
+    // ],
     window: {
       backgroundTextStyle: 'light',
       navigationBarBackgroundColor: '#fff',
-      navigationBarTitleText: 'WeChat',
-      navigationBarTextStyle: 'black'
+      navigationBarTitleText: '演示接口',
+      navigationBarTextStyle: 'black',
     },
 
     tabBar: {
-      color: "#666",
+      color: "#262626",
       selectedColor: "#b4282d",
       backgroundColor: "#fafafa",
       borderStyle: 'black',
       list: [{
-        pagePath: "pages/index/index",
+        pagePath: "pages/main/index/index",
         iconPath: "./assets/tab-bar/home.png",
-        selectedIconPath: "./assets/tab-bar/home-active.png",
+        selectedIconPath: "./assets/tab-bar/home-hover.png",
         text: "首页"
       },{
-        pagePath: "pages/classification/index",
-        iconPath: "./assets/tab-bar/home.png",
-        selectedIconPath: "./assets/tab-bar/home-active.png",
+        pagePath: "pages/main/classification/index",
+        iconPath: "./assets/tab-bar/class.png",
+        selectedIconPath: "./assets/tab-bar/class-hover.png",
         text: "分类"
       },{
-        pagePath: "pages/classPage/index",
-        iconPath: "./assets/tab-bar/home.png",
-        selectedIconPath: "./assets/tab-bar/home-active.png",
+        pagePath: "pages/main/classPage/index",
+        iconPath: "./assets/tab-bar/cart.png",
+        selectedIconPath: "./assets/tab-bar/cart-hover.png",
         text: "识物"
       },{
-        pagePath: "pages/setUp/index",
-        iconPath: "./assets/tab-bar/home.png",
-        selectedIconPath: "./assets/tab-bar/home-active.png",
+        pagePath: "pages/main/mine/index",
+        iconPath: "./assets/tab-bar/my.png",
+        selectedIconPath: "./assets/tab-bar/my-hover.png",
         text: "我的"
       }]
 

@@ -1,0 +1,64 @@
+@import '../../../styles/color.less';
+
+.authentication {
+  min-height: 100vh;
+
+  .LoginPage {
+    padding-top: 30px;
+    min-height: 100vh;
+    background: #fff;
+  }
+
+  .inputLabel {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid #f7f7f7; /* no */
+    background: white;
+    height: 98px;
+    color: #666;
+
+    label {
+      font-size: 30px;
+      margin-left: 20px;
+      margin-right: 40px;
+    }
+
+    input {
+      flex: 1;
+      font-size: 28px;
+      color: rgb(42, 42, 42);
+      height: 65px;
+      line-height: 65px;
+      background: none;
+
+      &::-webkit-input-placeholder {
+        color: #D8D8D8;
+      }
+    }
+  }
+
+  .loginBtn {
+    margin: 44px;
+    font-size: 32px;
+    color: #fff;
+    text-align: center;
+    border-radius: 38px;
+    background-color: @btnColor;
+    height: 76px;
+    font-weight: 500;
+    line-height: 76px;
+  }
+
+  .getCode {
+    text-align: center;
+    font-size: 28px;
+    margin-right: 20px;
+    border-radius: 7px;
+    background-color: @btnColor;
+    width: 168px;
+    height: 63px;
+    line-height: 63px;
+    color: #fff;
+  }
+}

@@ -12,7 +12,7 @@
 //   login,
 // ]
 import common from './common';
-import InputNumber from '../component/InputNumber/model'
+import InputNumber from '../components/InputNumber/model'
 
 export default [
   common,

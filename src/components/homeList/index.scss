@@ -1,0 +1,55 @@
+.homeList {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 20px;
+
+  .at-col {
+    padding: 0 10px;
+    overflow: hidden;
+  }
+
+  .title {
+    font-size: 30px;
+    border-left: #454545 6px solid;
+    padding-left: 15px;
+    margin: 30px 10px 20px 10px;
+  }
+
+  &__imageDiv {
+    .homeList__image {
+      width: 100%;
+    }
+  }
+
+  &__txt {
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+    .h3 {
+      font-size: 30px;
+      color: #454545;
+      display: block;
+      padding: 15px 15px 0 15px;
+    }
+
+    .content {
+      padding: 8px 15px 20px 15px;
+    }
+
+    .txt {
+      font-size: 28px;
+      color: #B4282D;
+      display: block;
+    }
+
+    .tag {
+      padding: 2px 11px;
+      font-size: 24px;
+      border-radius: 20px;
+      color: #B4282D;
+      border: 1px solid #B4282D;
+    }
+  }
+}

@@ -1,12 +1,9 @@
 import Taro from '@tarojs/taro'
 
-
-
 type Config = {
   baseURL: string,
   noConsole?: boolean
 }
-
 
 // 检查状态码
 function checkCode (code, msg) {

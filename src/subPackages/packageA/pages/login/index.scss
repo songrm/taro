@@ -1,19 +1,17 @@
-@import '../../../../assets/color.scss';
+// @import '../../../../assets/color.scss';
 
 .InvitationPage {
   padding-top: 30px;
   min-height: 100vh;
-  background: $bgColor;
-
+  background: red;
 }
 
 .inputLabel {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  border-bottom: 1px solid $bgColor;
+  border-bottom: 1px solid red;
   background: #fff;
-
   height: 98px;
   margin: 0 30px;
 
@@ -43,8 +41,7 @@
   font-size: 34px;
   color: #fff;
   text-align: center;
-  border-radius: 2px;
-  background-color: $btnColor;
+  background-color: red;
   box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.05);
   border-radius: 4px;
   height: 90px;
@@ -56,4 +53,3 @@
     pointer-events: none;
   }
 }
-

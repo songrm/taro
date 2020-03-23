@@ -1,0 +1,47 @@
+.NavigationBar {
+  width: 100%;
+  position: fixed;
+  z-index: 99999;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+
+  .wes {
+    overflow: hidden;
+    word-wrap: normal;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  &__content {
+    position: relative;
+  }
+
+  &__back {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__title {
+    position: absolute;
+    font-weight: 500;
+    font-size: 32px;
+
+    &-center {
+      width: 340px;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    &-left {
+      width: 500px;
+      top: 50%;
+      left: 24px;
+      transform: translate(0, -50%);
+    }
+  }
+}

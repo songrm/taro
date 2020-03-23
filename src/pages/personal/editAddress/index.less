@@ -1,0 +1,93 @@
+@import '../../../styles//color.less';
+
+.EditAddress {
+  background-color: #fff;
+  min-height: 100vh;
+
+  .top,
+  .a-bottom {
+    padding: 0 30px;
+  }
+
+  .input {
+    width: 100%;
+    height: 90px;
+  }
+
+  .genders {
+    height: 100%;
+    justify-content: flex-start;
+  }
+
+  .area {
+    width: 100%;
+    height: 100%;
+
+    .pickerText {
+      width: 100%;
+      pointer-events: none;
+    }
+  }
+
+  .d-a {
+    background-color: #F6F6F6;
+    height: 24px;
+  }
+
+  .default {
+    width: 100%;
+    height: 100%;
+    justify-content: flex-end;
+  }
+
+  .submit,
+  .del {
+    width: 100%;
+    height: 76px;
+    line-height: 76px;
+    text-align: center;
+    font-size: 28px;
+    color: #fff;
+    border-radius: 38px;
+  }
+
+  .submit {
+    margin-top: 100px;
+    background-color: @theme-color;
+  }
+
+  .del {
+    background-color: transparent;
+    color: @theme-color;
+    border: none;
+    margin-top: 10px;
+  }
+
+  .genderItem {
+    margin-right: 20px;
+
+    .genderIcon {
+      width: 36px;
+      height: 36px;
+      margin-right: 10px;
+    }
+
+    .i {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      border: 1px solid #333;
+    }
+
+    .genderText {
+      color: #333;
+      margin-left: 10px;
+    }
+
+    .genderText,
+    .genderIcon {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+}

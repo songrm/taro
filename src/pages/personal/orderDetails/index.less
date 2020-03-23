@@ -1,0 +1,236 @@
+@import '../../../styles/color.less';
+
+.orderDetails {
+  min-height: 100vh;
+  background-color: #f9f9f9;
+  padding-bottom: 90px;
+
+  .goods-details-warp {
+    background-color: #fff;
+    padding: 44px;
+    border-radius: 32px 32px 0 0;
+    margin-top: -20px;
+  }
+
+  .goods-details {
+    display: flex;
+    justify-content: space-between;
+
+    &-image {
+      width: 180px;
+      height: 180px;
+      border-radius: 8px;
+      overflow: hidden;
+
+      .image {
+        width: 180px;
+        height: 180px;
+      }
+    }
+
+    &-des {
+      width: calc(100% - 200px);
+      margin: 0 1px 0 24px;
+
+      .goods-name {
+        color: #333;
+        font-weight: 500;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        font-size: 28px;
+      }
+
+      .goods-attr {
+        margin: 15px 0;
+
+        .tag {
+          padding: 6px 12px;
+          border-radius: 8px;
+          font-size: 28px;
+          background-color: #F9F9F9;
+          color: #999;
+        }
+      }
+
+      .goods-price {
+        display: flex;
+        justify-content: space-between;
+
+        .price {
+          color: @text-red;
+          font-size: 35px;
+        }
+
+        .num {
+          color: @text-base;
+          font-size: 30px;
+        }
+      }
+    }
+  }
+
+  // .info {
+  //   font-size: 28px;
+  //   display: flex;
+  //   justify-content: space-between;
+  //   padding-top: 30px;
+
+  //   &-key {
+  //     width: 150px;
+  //     margin-right: 10px;
+  //     color: #8F8F8F;
+  //     font-size: 28px;
+  //   }
+
+  //   &-value {
+  //     width: calc(100% - 180px);
+  //     text-align: right;
+  //     color: @text-base;
+  //   }
+  // }
+
+  .circle {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background-color: #4a4a4a;
+    border-radius: 15px;
+    vertical-align: middle;
+    margin: 0 15px;
+  }
+
+  .orderDetaild-top {
+    // padding: 30px;
+    background: linear-gradient(90deg, rgba(255, 77, 21, 1) 0%, rgba(245, 28, 28, 1) 100%);
+    padding-top: 100px;
+    padding-bottom: 68px;
+
+    .title {
+      color: #fff;
+      font-size: 40px;
+      font-weight: 600;
+      margin-bottom: 30px;
+      text-align: center;
+      padding-top: 44px;
+    }
+
+    .created {
+      text-align: center;
+      color: #fff;
+      font-size: 26px;
+      font-weight: 400;
+    }
+  }
+
+  .group {
+    background-color: #fff;
+    padding: 60px;
+    border-radius: 32px;
+    text-align: center;
+    margin-top: -40px;
+    margin-bottom: 24px;
+
+    &-name {
+      color: #333;
+      font-size: 32px;
+      font-weight: 500;
+      font-weight: 400;
+    }
+
+    &-time {
+      color: #8F8F8F;
+      font-size: 26px;
+      margin-top: 8px;
+    }
+
+    .group-image {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+
+      .image {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        border-radius: 100px;
+      }
+    }
+  }
+
+  .bottom {
+    text-align: right;
+    background-color: #fff;
+  }
+
+  .status_but {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 28px;
+    margin: 15px;
+    border-radius: 30px;
+    line-height: 40px;
+    font-weight: 400;
+  }
+
+  .contact {
+    margin: 0 20px;
+    background-color: #FDFDFD;
+    color: #333;
+    font-size: 32px;
+    height: 104px;
+    line-height: 104px;
+    font-weight: 400;
+    border-radius: 0 0 32px 32px;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
+  .goods-des {
+    border-radius: 32px 32px 0 0;
+    background-color: #fff;
+    padding: 24px 44px;
+    margin-bottom: 24px;
+
+    .line {
+      height: 1px;
+      background-color: rgba(0, 0, 0, 0.1);
+      margin-top: 30px;
+    }
+
+    .info-line {
+      border-top: rgba(0, 0, 0, 0.2) 1px solid;
+      margin-top: 30px;
+    }
+
+    .info {
+      color: @text-base;
+
+      &-key {
+        color: @text-base;
+        font-size: 28px;
+      }
+
+      &-value {
+        .price {
+          color: #333;
+          display: inline-block;
+          margin-right: 24px;
+
+          .num {
+            font-size: 39px;
+            color: @text-base;
+            font-weight: 500;
+          }
+        }
+
+        .purchase {
+          color: @text-red;
+          display: inline-block;
+          font-size: 26px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

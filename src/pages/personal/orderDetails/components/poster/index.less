@@ -1,0 +1,72 @@
+.ticket-poster {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+
+  .poster-box {
+    position: relative;
+    height: calc(~'100% - 132px');
+    box-sizing: border-box;
+  }
+
+  .poster-wrap {
+    padding: 40px 0;
+    padding-top: 80px;
+  }
+
+  .poster-cover {
+    width: 620px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+  }
+
+  .poster-close {
+    display: block;
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .poster-save {
+    position: absolute;
+    width: 100%;
+    height: 132px;
+    left: 0;
+    bottom: 0;
+    // background-color: #fff;
+    z-index: 99;
+
+    &__box {
+      width: 400px;
+      height: 96px;
+      border-radius: 48px;
+      background-color: #b07d2e;
+      box-shadow: 0 4px 22px rgba(181, 119, 22, 0.41);
+      color: #fff;
+      margin: 0 auto;
+      line-height: 96px;
+      text-align: center;
+    }
+
+    &__icon {
+      width: 50px;
+    }
+
+    &__text {
+      margin-left: 18px;
+      font-size: 32px;
+    }
+  }
+
+  &.x {
+    .poster-save {
+      padding-bottom: 68px;
+    }
+
+    .poster-box {
+      height: calc(~'100% - 132px - 68px');
+    }
+  }
+}

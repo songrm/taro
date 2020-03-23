@@ -1,0 +1,21 @@
+@import '../../../../../styles/color.less';
+
+.info {
+  font-size: 28px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+
+  &-key {
+    width: 150px;
+    margin-right: 10px;
+    color: #8F8F8F;
+    font-size: 28px;
+  }
+
+  &-value {
+    width: calc(100% - 180px);
+    text-align: right;
+    color: @text-base;
+  }
+}

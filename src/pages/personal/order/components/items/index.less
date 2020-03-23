@@ -1,0 +1,164 @@
+@import '../../../../../styles/color.less';
+
+.orderList-card {
+  width: 710px;
+  // height: 305px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  background-color: #fff;
+  margin: 32px auto;
+  margin-bottom: 0;
+  border-radius: 16px;
+
+  &.hidden {
+    animation: delAnition 1s;
+    animation-fill-mode: forwards;
+    pointer-events: none;
+  }
+
+  &.hasFoot {
+    height: 398px;
+  }
+
+  .meta {
+    height: 92px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    line-height: 92px;
+
+    &-name {
+      font-size: 32px;
+      color: #232528;
+    }
+
+    &-status {
+      font-size: 26px;
+      color: #666;
+      line-height: 36px;
+      font-weight: 500;
+      text-align: right;
+
+      &__text {
+        line-height: 30px;
+        margin-left: 20px;
+      }
+    }
+  }
+
+  .box {
+    padding: 24px 0;
+
+    &-info {
+      align-items: flex-start;
+    }
+
+    &-intro {
+      // height: 100px;
+      display: flex;
+    }
+
+    &-cover {
+      width: 100px;
+      height: 100px;
+    }
+
+    &-con {
+      margin-left: 24px;
+    }
+
+    &-name {
+      width: 400px;
+      line-height: 44px;
+      font-size: 32px;
+      color: @text-base;
+      font-weight: 500;
+
+      &__more {
+        // color: @theme-color;
+        display: inline-block;
+      }
+
+      .division {
+        padding: 0 10px;
+      }
+    }
+
+    &-time {
+      color: #8F8F8F;
+      font-size: 26px;
+      line-height: 36px;
+      margin-top: 6px;
+    }
+
+    &-number {
+      font-size: 28px;
+      color: #232528;
+      margin-top: 24px;
+    }
+
+    &-price {
+      color: @theme-color;
+      font-size: 24px;
+      line-height: 24px;
+      display: flex;
+      align-items: flex-end;
+
+      &__text {
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 30px;
+      }
+    }
+  }
+
+  .foot {
+    padding: 24px 0;
+
+    &-pay {
+      // width: 100%;
+      // height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      &__btn {
+        display: inline-block;
+        margin-left: 10px;
+        padding: 0 34px;
+        line-height: 60px;
+        text-align: center;
+        border-radius: 30px;
+      }
+    }
+
+    &-btns {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      font-size: 28px;
+      color: #232528;
+    }
+
+    &-btn {
+      width: 50%;
+      height: 100%;
+
+      &:first-child {
+        border-right: 1px solid rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+}
+
+@keyframes delAnition {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    height: 0;
+    margin-top: 0;
+    -webkit-transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);
+    transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);
+  }
+}

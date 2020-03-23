@@ -1,0 +1,62 @@
+.evaluationDetails {
+  min-height: 100vh;
+  background-color: #f2f2f2;
+
+  .details {
+    background-color: #fff;
+    margin-top: 20px;
+
+    .user {
+      display: flex;
+      padding: 30px 30px 20px 30px;
+
+      &-image {
+        width: 100px;
+        height: 100px;
+        overflow: hidden;
+        border-radius: 100px;
+
+        .image {
+          width: 100px;
+          height: 100px;
+        }
+      }
+
+      &-constent {
+        width: calc(100% - 120px);
+        margin-left: 20px;
+
+        &-id {
+          font-size: 28px;
+          font-weight: bold;
+          color: #333;
+          margin-bottom: 20px;
+        }
+
+        &-des {
+          display: flex;
+          justify-content: space-between;
+          font-size: 26px;
+          color: #999;
+          line-height: 30px;
+        }
+      }
+    }
+
+    .comment-content {
+      padding: 20px 30px;
+      font-size: 26px;
+      color: #333;
+    }
+
+    .image-list {
+      border-top: 1px dashed #e4e4e4;
+      padding: 20px 30px;
+
+      .image {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+}

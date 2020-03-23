@@ -1,0 +1,150 @@
+/* 禁止选中文本 */
+.usn {
+  user-select: none;
+}
+
+/* 浮动 */
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.cf::after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+  overflow: hidden;
+}
+
+.wn {
+  /* 强制不换行 */
+  word-wrap: normal;
+  white-space: nowrap;
+}
+
+.wb {
+  /* 强制换行 */
+  white-space: normal;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.wp {
+  /* 保持空白序列 */
+  overflow: hidden;
+  text-align: left;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.wes {
+  /* 多出部分用省略号表示 , 用于一行 */
+  overflow: hidden;
+  word-wrap: normal;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.wes-2 {
+  /*! autoprefixer: off */
+  -webkit-box-orient: vertical; /* autoprefixer: on */
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+}
+
+/* flex布局 */
+.df-sb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.df-sa {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.df-wrap {
+  flex-wrap: wrap;
+}
+
+/* 垂直居中 */
+.df-c {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ts-c {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ts-mc {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+}
+
+.df-col-c {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.df-col-sb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.df-col-sa {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.full-screen {
+  padding-bottom: @full-padding !important;
+}
+
+.disabled-scroll {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+}
+
+.hide-scroll {
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+}
+
+.touch {
+  -webkit-overflow-scrolling: touch;
+}
+
+// 保持序列
+.pre {
+  white-space: pre-wrap;
+}

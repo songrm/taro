@@ -1,0 +1,79 @@
+@import '../../../styles/color.less';
+
+.address {
+  background-color: #fff;
+  min-height: 100vh;
+  padding-bottom: 140px;
+
+  .AddressItem {
+    font-size: 28px;
+    color: #333;
+    padding: 38px 44px;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+    .itemLeft {
+      width: 600px;
+
+      .itemInfo {
+        justify-content: flex-start;
+        display: flex;
+        align-items: center;
+        // justify-content: center;
+      }
+
+      .itemName {
+        margin-right: 60px;
+        color: #262626;
+        font-size: 32px;
+      }
+
+      .itemAddress {
+        color: #8F8F8F;
+        font-size: 26px;
+        font-weight: 400;
+        line-height: 36px;
+        margin-top: 6px;
+      }
+
+      .itemDefault {
+        color: #fff;
+        background-color: @theme-color;
+        font-size: 20px;
+        margin-left: 20px;
+        padding: 0 8px;
+        border-radius: 4px;
+      }
+    }
+
+    .itemRight {
+      position: absolute;
+      right: 30px;
+      bottom: 40px;
+      width: 36px;
+      height: 36px;
+    }
+  }
+
+  .record {
+    position: fixed;
+    bottom: 88px;
+    left: 44px;
+    right: 44px;
+
+    .record-btn {
+      border-radius: 38px;
+      background-color: #FF4210;
+      color: #fff;
+      font-size: 26px;
+      font-weight: 400;
+      text-align: center;
+      height: 76px;
+      line-height: 76px;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+@import '../../styles/color.less';
+
+.InputNumber {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+
+  .input {
+    min-width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 45px;
+    padding: 3px 5px;
+    text-align: center;
+    color: #262626;
+  }
+
+  .addCart {
+    border-left: 0;
+    color: @btnColor;
+  }
+
+  .reduceCart {
+    color: @text-grey;
+  }
+}

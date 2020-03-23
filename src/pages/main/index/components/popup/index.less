@@ -1,0 +1,50 @@
+@import '../../../../../styles/color.less';
+
+.all {
+  position: fixed;
+  bottom: 0;
+  min-height: 40px;
+  background-color: #f2f2f2;
+  left: 0;
+  right: 0;
+  padding: 44px 0 0 0;
+  border-radius: 32px 32px 0 0;
+
+  .list {
+    display: flex;
+    justify-content: space-between;
+    padding: 1px 44px;
+
+    .title {
+      font-size: 30px;
+      font-weight: 500;
+    }
+
+    .number {
+      font-size: 30px;
+    }
+  }
+
+  .accounts {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 0 44px;
+    margin-top: 20px;
+
+    &-num {
+      font-size: 45px;
+      color: @theme-color;
+      font-weight: 800;
+      line-height: 100px;
+    }
+
+    &-btn {
+      color: #fff;
+      background-color: @theme-color;
+      width: 192px;
+      height: 100px;
+      text-align: center;
+      line-height: 100px;
+    }
+  }
+}

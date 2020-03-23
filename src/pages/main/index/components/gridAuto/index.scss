@@ -1,0 +1,35 @@
+.gridAuto {
+  font-size: 28px;
+  text-align: center;
+  margin: 20px 0;
+
+  .at-row {
+    display: flex;
+    width: 100%;
+  }
+
+  .at-col {
+    margin-bottom: 20px;
+    position: relative;
+    flex: 1;
+
+    .tag {
+      position: absolute;
+      padding: 2px 8px;
+      border-radius: 8px;
+      background-color: red;
+      color: #fff;
+      right: calc(50% - 80px);
+      font-size: 24px;
+      z-index: 22;
+    }
+  }
+
+  &__image {
+    width: 65px;
+    height: 65px;
+    margin: 10px auto;
+    display: block;
+    // background-color: #333;
+  }
+}
